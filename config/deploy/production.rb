@@ -2,7 +2,7 @@ server "159.203.3.130", user: 'deployer', roles: %w{app db web}
 set :stage, :production
 set :branch, :master
 set :deploy_user, "deployer"
-set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{app_name}"
+set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/davechmura_website"
 set :branch, 'master'
 set :rails_env, 'production'
 set :puma_env, "production"
