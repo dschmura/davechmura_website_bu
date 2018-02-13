@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: davechmura_website_development
+
+test:
+  <<: *default
+  database: davechmura_website_test
+
+staging:
+  <<: *default
+  database: davechmura_website_staging
+  username: <%= Rails.application.secrets.staging_db_username %>
+  password: <%= Rails.application.secrets.staging_db_password %>
+
+production:
+  <<: *default
+  database: davechmura_website_production
+  username: <%= Rails.application.secrets.production_db_username %>
+  password: <%= Rails.application.secrets.production_db_password %>
+
