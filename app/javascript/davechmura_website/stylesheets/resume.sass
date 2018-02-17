@@ -1,0 +1,153 @@
+// Place all the styles related to the resume controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import '~bootstrap/scss/bootstrap'
+@import './mixins'
+
+.resume-header
+  height: 300px
+  background-color:  #EBAA1E
+  background-image: url('../images/resume_header.jpg')
+  background-position: right
+  background-size: 100% 107%
+  background-repeat: no-repeat
+
+  .resume-contact
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    font-weight: 700
+    position: absolute
+    // @include transparent(0.85, 85)
+    width: 300px
+    min-height: 300px
+    border-bottom: 10px solid #fff
+    transform: rotate(-90deg)
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    background-color:  #EBAA1E
+
+.resume-name
+  a
+    color: #FFFFFF
+    position: relative
+    top: 13px
+    right: 20px
+    font-size: 2.1rem
+    &:hover
+      text-decoration: none
+
+.resume-phone
+  h3
+    position: relative
+    bottom: 5px
+    left: 6px
+    font-size: 2rem
+    font-style: bold
+    color: #FFFFFF
+
+.resume-email
+  position: relative
+  left: 6px
+  font-size: 14px
+  font-style: bold
+  color: #FFFFFF
+
+.resume
+  // @include outer-container(100%)
+  %ul
+    %li
+      list-style-type: circle
+.resume-button
+  width: 60%
+  position: relative
+  left: 20%
+
+
+.resume-masthead
+  background-color: yellow
+  @include make-row()
+
+  .resume-activities
+    background-color: #e64141
+    @include make-col(4)
+    padding: 2rem
+  .resume-summary
+    background-color: #17a7d5
+    @include make-col(8)
+    padding: 2rem
+  .resume-skills
+    @include make-col(12)
+    background-color: #2bb94b
+    padding: 2rem
+
+.resume-job
+  font-size: 110%
+  line-height: 1rem
+  // @include margin( 1rem null null null)
+
+.resume-employment-dates
+  @include make-col(3)
+  font-style: oblique
+  font-weight: bold
+
+.resume-employer
+  font-size: 120%
+  line-height: 1rem
+
+.resume-job-location
+  display: none
+  font-style: oblique
+  font-weight: bold
+  float: right
+  margin-right: 1rem
+
+.resume-experience-section
+  @include make-col(9)
+  // @include outer-container
+
+  // @include margin(1rem 2rem null 2rem)
+  margin: 2rem
+  .resume-job-experiences
+    // @include row()
+    position: relative
+    left: 3%
+    li
+      line-height: 1.3rem
+      clear: left
+      list-style-type: circle
+
+.resume-sidebar
+  margin-top: 3rem
+  margin-right: 1rem
+  .resume-experience-sidebar
+    margin-bottom: 1rem
+    padding: 1rem
+    @include rounded-corners(15px)
+    // @include padding( 1rem 1rem 1rem 1rem)
+    // @include margin( null null 1rem null)
+    background: #607B9B
+    min-height: auto
+    li
+      color: white
+      font-weight: bold
+
+  .resume-a-bit-about-me-sidebar
+    padding: 1rem
+    background-color: #79A092
+    @include rounded-corners(15px)
+    // @include padding( 1rem 1rem 1rem 1rem)
+    // @include margin( null null 1rem null)
+  .resume-education-sidebar
+    padding: 1rem
+    margin-top: 1rem
+    @include rounded-corners(15px)
+    // @include padding( 1rem 1rem null 1rem)
+    background-color: #607B9B
+
+.field-circle
+  float: right
+
+.connect-icons
+  color: #FFF
+  &:hover
+    color: #F5BB1C
+    text-decoration: none
