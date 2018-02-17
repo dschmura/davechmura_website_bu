@@ -1,0 +1,199 @@
+
+:css
+  #mainNav{
+    /* display: none; */
+
+    }
+.resume-header
+  .resume-contact.text-center
+    .resume-name
+      %h2= link_to('David Chmura', root_path)
+    .resume-phone
+      %h3 734•864•1232
+    %br
+    .resume-email
+      dschmura@humbledaisy.com
+
+    .resume-contact-social
+      .resume-email-social
+        email
+      .resume-twitter-social
+        twitter
+      .resume-linkedin-social
+        social
+      .resume-github-social
+        github
+      .resume-address-social
+        address
+      .resume-telephone-social
+        telephone
+
+.resume-masthead
+  .resume-activities
+    = render 'activities'
+  .resume-summary
+    = render 'summary'
+  .resume-skills
+    = render 'skills'
+
+.resume.d-flex
+
+  .resume-sidebar
+    -# .resume-experience-sidebar
+      %h3 Experience
+      %ol
+        %li Project Management
+        For any project to be successful, it needs to be tended, cared for, and nurtured to completion.  Every project that I have worked on has involved my direct interaction with the client and I recognize the importance of instilling confidence and delivering quality results.
+
+        %li Instructional Technology
+        I have worked collaboratively with educators at various levels of competency to help them effectively integrate and leverage technology in their instruction.
+
+        %li Public Speaking
+        I am comfortable speaking extemporaneously with individuals, groups and in front of thousands of people.
+
+        %li Leadership
+        I think that excellent leaders approach their roles as providing support and resources that allow and encourage those around them to succeed.  An effective manager understands the strengths and weaknesses of their staff, removes barriers to their success and inspires them to excel.
+
+    .resume-a-bit-about-me-sidebar
+      %h3 A bit about me...
+      %p My unusually diverse background makes me an ideal candidate.  My range of experience includes project management, teaching and counseling students and staff as director of a boarding school, policy development,
+      .field-circle
+        = image_tag("field_circle.png", alt: 'Field of daisies. Stockbrdige, MA')
+      marketing, customer relations, social networking, web site development, crisis counseling, quality assurance, computer maintenance, trouble-shooting & repair, software development, and large scale software deployment. This eclectic mix of skills provides me with an excellent mix of technological knowledge, observational skills and an understanding of what individuals and groups need to be inspired, work, and meet their potential.
+
+    .resume-education-sidebar
+      %h3 Education
+
+      %p University of Michigan, 2002
+      %br Masters of Science (Information), School of Information, Ann Arbor, MI
+      %br Human Computer Interaction
+
+      %p Alma College, 1995
+      %br Bachelor of Science (Psychology), Alma, MI
+      %br Graduated with honors
+
+      %p Dev Bootcamp
+      %br 19 week intensive training in full stack web application development. Chicago, IL
+
+  .resume-experience-section
+    %h2 Experience
+    %h2.resume-employer University of Michigan, College of Literature, Science and the Arts
+    %h2.resume-job Systems Architect Intermediate, LSA MIS
+    .resume-employment-dates September 2015 - Present
+    .resume-job-location Ann Arbor, MI
+
+    I developed and manage The University of Michigan's classroom management system. Most of my work has been in full-stack web development (Ruby on Rails, Javascript/jQuery, HTML5, CSS/SASS). In addition to designing and building web applications, I have worked on server-side support for the core infrastructure on which it resides.
+    %ul.resume-job-experiences
+      %li Participate in product and team based planning to help develop and drive the product roadmap for web applications for College of LSA
+      %li Design and develop web applications for College of LSA.
+      %li Designed and coded new MClassrooms web application for tracking classrooms at the University of Michigan. (http://rooms.lsa.umich.edu). Included building search, authorization, image upload/processing, and pdf generation.
+      %li Developed and administered curriculum to train team on use of Git and Git workflows for source control including security considerations.
+      %li Facilitate team retrospectives to improve team collaboration and set working agreements for improved productivity and delivery.
+      %li Manage the backlog, promote core agile practices and help design products for the University of Michigan’s various departmental needs.
+      %li Create and updated priorities and expectations of stakeholders by researching functionality and defining criteria through user stories.
+      %li Integrated tools to provide project stakeholders real-time updates on the progress of development projects, while ensuring developer day-to-day activities remain uninhibited.
+
+    %h2.resume-job Information Services Consultant, LSA MIS
+    .resume-employment-dates October 2013 - September 2015
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Participate in product and team based planning to help develop and drive the product roadmap for web applications for College of LSA
+      %li Designed and coded new MClassrooms site for tracking classrooms at the University of Michigan. (http://rooms.lsa.umich.edu)
+      %li Acted as Project Manager for Museum’s Data Management System project.
+      %li Provide training to faculty, staff, students, and departmental technical workers.
+
+    %h2.resume-job Information Services Consultant, LSA ISS
+    .resume-employment-dates October 2013 - September 2015
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      Delivered an outstanding customer experience by working closely with faculty, staff and students  to ensure consistent and reliable managed computer systems, instructional technology integration and support for innovative teaching.
+      %li Architected and implemented a support infrastructure to facilitate deployment, maintenance, and recovery for 800+ Mac OS X systems. Managed the operating system and applications for all Macintosh deployments including individual workstations, classrooms, audio/video editing suites, and laptops.
+      %li Manage client computer load sets unobtrusively managing security, software updates, software license compliance for classroom, computer lab, and individual staff computers.
+      %li Oversee hardware and software acquisition for multimedia classrooms, audio/video editing suites, laptops and workstations to meet faculty, staff and student needs.
+      %li Architect and co-developer for BlueReview Digital Lecture Capture system for LSA’s non-intrusive lecture and presentation capture and distribution. http://bluereview.lsa.umich.edu
+
+    %h2.resume-employer Humble Daisy, Inc.
+    %h2.resume-job CEO and Chief Instigator
+    .resume-employment-dates August 2002 - Present
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Designed and launched ProfCast lecture capture software for Macintosh and Windows.
+      %li Designed and launched SonicPics digital story telling application for the iPhone.
+      %li Evaluated user needs, designed, and implemented web sites including designing site architecture and creating content for all projects.
+      %li Designed web interfaces including writing content and site architecture.
+      %li Designed logos, graphics, and marketing materials for web-based, desktop, and mobile platform software products.
+      %li Attend professional conferences, visit schools and colleges and meet educational customers for feedback.
+      %li A comprehensive portfolio is available at:
+      =link_to 'http://www.humbledaisy.com/portfolio', 'http://www.humbledaisy.com/portfolio'
+
+    %h2.resume-employer University of Michigan, School of Information
+    %h2.resume-job Systems Administrator
+    .resume-employment-dates August 2002 - 2007
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Architected and implemented a support infrastructure to facilitate deployment, maintenance, and recovery for 165+ Mac OS X systems.
+      %li Developed policies and procedures for information technology issues at the school.
+      %li Developed CMS for School of Information computing group to provide technical and learning resources for the school.
+      %li Created CMS for and served as steward of MacSig (Macintosh Special Interest Group) at The University of Michigan
+      %li Supervised work of 14 part-time technical staff.
+      %li Graduate Student Research Assistant  · Ann Arbor, MI  2000 to 2002
+      %li Evaluated user needs, designed and implemented web sites for two multi-million dollar federal research projects: Great Lakes CFAR and The Connection Project.
+      %li Designed logo used for a federally funded research project. Redesigned Great Lakes CFAR web site, including usability evaluations, graphics design, content and site architecture.
+      %li Developed standards-based web applications that conform with usability and accessibility guidelines.
+
+    %h2.resume-employer University of Michigan, School of Information
+    %h2.resume-job Graduate Student Research Asst
+    .resume-employment-dates January 2000 - August 2002
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Evaluated user needs, designed and implemented web sites for two multi-million dollar federal research projects: Great Lakes CFAR and The Connection Project.
+      %li Designed logo used for major federally funded research project.
+      %li Conducted usability evaluations on project web site.
+      %li Implemented major web site redesign project, including graphics design, writing content and site architecture for Great Lakes CFAR web site.
+      %li Develop standards-based web sites that conform with usability and accessibility guidelines.
+
+    %h2.resume-employer University of Michigan, Health Media Research Lab
+    %h2.resume-job Web Master / Designer
+    .resume-employment-dates January 1999 - December 2000
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Developed new interface designs to address navigation and programming issues and developed style guides for new educational multimedia games.
+      %li Trained staff of 16 on use of HTML editing software and supervised HTML development.
+      %li Designed web interfaces including writing content, designing site architecture, and a style guide for department web site.
+      %li Designed and maintained multimedia content using Quicktime, Macromedia Director, and other tools for ongoing interactive multimedia kiosk project.
+      %li Led development of new web services with HTML, implemented CGI scripts, on both Macintosh and UNIX servers.
+
+    %h2.resume-employer University of Michigan, Health Media Research Lab
+    %h2.resume-job Computer Consultant I
+    .resume-employment-dates November 1998 - December 1999
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Coordinated, supervised and provided direct support for 100 interactive multimedia kiosks throughout the state of Michigan.
+      %li Designed and oversaw the upgrade and replacement of 100+ systems.
+      %li Provided Macintosh hardware and software support for 25+ users in a multimedia lab.
+      %li Supervised six student programmers.
+
+    %h2.resume-employer University of Michigan, Department of Neurology
+    %h2.resume-job Research Assistant / Research Secretary
+    .resume-employment-dates April 1997 - November 1998
+    .resume-job-location Ann Arbor, MI
+    %ul.resume-job-experiences
+      %li Scheduled and coordinated testing of subjects for Federally supported research study.
+      %li Conducted on-line literary searches for scientific journals, and train principle investigators in utilizing on-line journal resources.
+      %li Reconciled Federal and Private grants for 25 accounts.
+      %li Scheduled and coordinated Faculty Candidate interviews and hosting functions for department.
+      %li Generated solutions to computer related problems, including installations, and training.
+
+    %h2.resume-employer The DeSisto School
+    %h2.resume-job Director of Residence Life
+    .col-lg-6.col-md-6.resume-employment-dates April 1995 - April 1996
+    .resume-job-location Stockbridge, MA
+    %ul.resume-job-experiences
+      %li Oversaw all aspects of student life at a private boarding high school.
+      %li Directed a staff of 45 professional personnel.
+      %li Trained and provided counseling for faculty and students.
+      %li Developed and implemented staff accountability protocols and policies.
+      %li Recruited and hired staff.
+      %li Directed daily faculty meetings and weekly staff meetings.
+      %li Directed therapeutic group intervention sessions for faculty and staff.
+      %li Planned and coordinated weddings and corporate retreats, including the Boston Symphony Orchestra.

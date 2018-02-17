@@ -1,0 +1,64 @@
+/ Portfolio Grid
+%section#portfolio.bg-faded
+
+  .row
+    .col-lg-12.text-center
+      %h2.section-heading Portfolio
+      %h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+  .row
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        = image_tag('projects/mClassrooms_index.png', class: 'img-fluid ', alt: 'Mi-Locations web site')
+      .portfolio-caption
+        %h4 MClassrooms / MiLocations
+        %p.text-muted Illustration
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        = image_tag('projects/SonicPicsCascadingPhotos.png', class: 'img-fluid ', alt: 'SonicPics - Digital Storytelling App')
+      .portfolio-caption
+        %h4 SonicPics
+        %p.text-muted Mobile Product Design
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        = image_tag('projects/ProfCast_Logo.png', class: 'img-fluid ', alt: 'ProfCast Lecture Capture App')
+      .portfolio-caption
+        %h4 ProfCast
+        %p.text-muted Identity
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal4"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        %img.img-fluid{:alt => "BlueReview", :src => "img/portfolio/04-thumbnail.jpg"}/
+      .portfolio-caption
+        %h4 BlueReview
+        %p.text-muted Branding
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal5"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        %img.img-fluid{:alt => "MacSig", :src => "img/portfolio/05-thumbnail.jpg"}/
+      .portfolio-caption
+        %h4 MacSig
+        %p.text-muted Website Design
+    .col-md-4.col-sm-6.portfolio-item
+      %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal6"}
+        .portfolio-hover
+          .portfolio-hover-content
+            %i.fas.fa-plus.fa-3x
+        %img.img-fluid{:alt => "Connection Project", :src => "img/portfolio/06-thumbnail.jpg"}/
+      .portfolio-caption
+        %h4 Connection Project
+        %p.text-muted Photography
+
+  = link_to 'Resume', resume_path, :class => 'resume-button button btn btn-outline-primary btn-lg btn-block '
