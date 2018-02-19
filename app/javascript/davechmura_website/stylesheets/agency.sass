@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/bootstrap'
 @import 'variables'
 @import 'mixins'
 
@@ -226,6 +228,8 @@ section
 // Portfolio Section
 
 #portfolio
+  img
+    @include make-col(12)
   .portfolio-item
     margin: 0 0 15px
     right: 0
@@ -461,6 +465,10 @@ section
         padding: 0 100px 20px 20px
 
 // Skills Section
+.skill-item
+  @include make-col(4)
+  padding: 2rem
+
 
 // END Skills Section
 // Team Section
@@ -468,6 +476,7 @@ section
 .team-member
   text-align: center
   margin-bottom: 50px
+  // @include rounded-circle
 
   img
     margin: 0 auto
@@ -671,6 +680,8 @@ ul.social-buttons
   .modal-backdrop
     opacity: 0
     display: none
+    z-index: -1
+
 
 // Highlight Color Customization
 \::-moz-selection
