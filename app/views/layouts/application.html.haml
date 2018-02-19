@@ -6,6 +6,9 @@
     = csrf_meta_tags
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %script{:defer => "defer", :src => "https://use.fontawesome.com/releases/v5.0.6/js/all.js"}
+
+
   %body#page-top{:class => controller.controller_name}
     .corner-ribbon.top-right.sticky.red.shadow Work in Progress
 

@@ -1,13 +1,13 @@
 @import '~bootstrap/scss/functions'
 @import '~bootstrap/scss/bootstrap'
 @import 'variables'
+@import 'mixins'
 
 .modal-backdrop
   z-index: -1
 
 // You Forgot The Alt Message
-img[alt=""],
-img:not([alt])
+img[alt=""] img:not([alt])
   border: 5px dashed #c00
 
 .debug_dump

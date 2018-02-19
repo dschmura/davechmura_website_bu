@@ -1,2 +1,21 @@
-%h1 Pages#index
-%p Find me in app/views/pages/index.html.haml
+
+/ Header
+%header
+
+  .intro-text
+    .intro-lead-in Chief Instigator, passionate developer, mentor.
+    .intro-heading Let's work together!
+    %a.page-scroll.btn.btn-xl{:href => "#skills"} Tell Me More
+
+= render 'intro_text'
+= render 'skills'
+-# = render 'services'
+= render 'portfolio'
+-# = render 'about_timeline'
+
+= render 'team'
+
+-# = render 'clients'
+/ Contact
+
+-# = render 'portfolio_modals'
