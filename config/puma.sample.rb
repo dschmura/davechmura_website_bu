@@ -12,7 +12,7 @@ threads 4,16
 
 bind 'unix:///home/deployer/apps/davechmura_website/shared/tmp/sockets/davechmura_website-puma.sock'
 
-workers 0
+workers 1
 
 preload_app!
 on_restart do
